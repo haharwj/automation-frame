@@ -1,0 +1,4 @@
+系统工具包
+调用方法：
+Sys.[获取类型].[获取方法]
+SystemBuilder.getBuilder().getToolsFactory().[获取类型].[获取方法]

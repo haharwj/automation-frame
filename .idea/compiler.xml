@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="automation-frame_main" target="1.8" />
+      <module name="automation-frame_test" target="1.8" />
+      <module name="QuickFrame_main" target="1.8" />
+      <module name="QuickFrame_test" target="1.8" />
+      <module name="ssm-easy-template_main" target="1.8" />
+      <module name="ssm-easy-template_test" target="1.8" />
+      <module name="TsQuickFrame_main" target="1.8" />
+      <module name="TsQuickFrame_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

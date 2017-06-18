@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="numysql@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.1">
+    <root id="1"/>
+    <schema id="2" parent="1" name="numysql">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <schema id="6" parent="1" name="sys"/>
+    <table id="7" parent="2" name="sys_app_user"/>
+    <table id="8" parent="2" name="sys_dictionaries"/>
+    <table id="9" parent="2" name="sys_gl_qx"/>
+    <table id="10" parent="2" name="sys_menu"/>
+    <table id="11" parent="2" name="sys_role"/>
+    <table id="12" parent="2" name="sys_user"/>
+    <table id="13" parent="2" name="sys_user_qx"/>
+    <table id="14" parent="2" name="tb_pictures"/>
+    <table id="15" parent="2" name="user">
+      <Comment>用户表</Comment>
+    </table>
+    <table id="16" parent="2" name="weixin_command"/>
+    <table id="17" parent="2" name="weixin_imgmsg"/>
+    <table id="18" parent="2" name="weixin_textmsg"/>
+    <column id="19" parent="7" name="USER_ID">
+      <Position>1</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="20" parent="7" name="USERNAME">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="21" parent="7" name="PASSWORD">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="22" parent="7" name="NAME">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="23" parent="7" name="RIGHTS">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="24" parent="7" name="ROLE_ID">
+      <Position>6</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="25" parent="7" name="LAST_LOGIN">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="26" parent="7" name="IP">
+      <Position>8</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="27" parent="7" name="STATUS">
+      <Position>9</Position>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="28" parent="7" name="BZ">
+      <Position>10</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="29" parent="7" name="PHONE">
+      <Position>11</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="30" parent="7" name="SFID">
+      <Position>12</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="31" parent="7" name="START_TIME">
+      <Position>13</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="32" parent="7" name="END_TIME">
+      <Position>14</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="33" parent="7" name="YEARS">
+      <Position>15</Position>
+      <DataType>int(10)|0</DataType>
+    </column>
+    <column id="34" parent="7" name="NUMBER">
+      <Position>16</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="35" parent="7" name="EMAIL">
+      <Position>17</Position>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <key id="36" parent="7" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>USER_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="37" parent="8" name="ZD_ID">
+      <Position>1</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="38" parent="8" name="NAME">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="39" parent="8" name="BIANMA">
+      <Position>3</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="40" parent="8" name="ORDY_BY">
+      <Position>4</Position>
+      <DataType>int(10)|0</DataType>
+    </column>
+    <column id="41" parent="8" name="PARENT_ID">
+      <Position>5</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="42" parent="8" name="JB">
+      <Position>6</Position>
+      <DataType>int(10)|0</DataType>
+    </column>
+    <column id="43" parent="8" name="P_BM">
+      <Position>7</Position>
+      <DataType>varchar(1000)|0</DataType>
+    </column>
+    <key id="44" parent="8" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ZD_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="45" parent="9" name="GL_ID">
+      <Position>1</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="46" parent="9" name="ROLE_ID">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="47" parent="9" name="FX_QX">
+      <Position>3</Position>
+      <DataType>int(10)|0</DataType>
+    </column>
+    <column id="48" parent="9" name="FW_QX">
+      <Position>4</Position>
+      <DataType>int(10)|0</DataType>
+    </column>
+    <column id="49" parent="9" name="QX1">
+      <Position>5</Position>
+      <DataType>int(10)|0</DataType>
+    </column>
+    <column id="50" parent="9" name="QX2">
+      <Position>6</Position>
+      <DataType>int(10)|0</DataType>
+    </column>
+    <column id="51" parent="9" name="QX3">
+      <Position>7</Position>
+      <DataType>int(10)|0</DataType>
+    </column>
+    <column id="52" parent="9" name="QX4">
+      <Position>8</Position>
+      <DataType>int(10)|0</DataType>
+    </column>
+    <key id="53" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>GL_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="54" parent="10" name="MENU_ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="55" parent="10" name="MENU_NAME">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="56" parent="10" name="MENU_URL">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="57" parent="10" name="PARENT_ID">
+      <Position>4</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="58" parent="10" name="MENU_ORDER">
+      <Position>5</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="59" parent="10" name="MENU_ICON">
+      <Position>6</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="60" parent="10" name="MENU_TYPE">
+      <Position>7</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <key id="61" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>MENU_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="62" parent="11" name="ROLE_ID">
+      <Position>1</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="63" parent="11" name="ROLE_NAME">
+      <Position>2</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="64" parent="11" name="RIGHTS">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="65" parent="11" name="PARENT_ID">
+      <Position>4</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="66" parent="11" name="ADD_QX">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="67" parent="11" name="DEL_QX">
+      <Position>6</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="68" parent="11" name="EDIT_QX">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="69" parent="11" name="CHA_QX">
+      <Position>8</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="70" parent="11" name="QX_ID">
+      <Position>9</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <key id="71" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ROLE_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="72" parent="12" name="USER_ID">
+      <Position>1</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="73" parent="12" name="USERNAME">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="74" parent="12" name="PASSWORD">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="75" parent="12" name="NAME">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="76" parent="12" name="RIGHTS">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="77" parent="12" name="ROLE_ID">
+      <Position>6</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="78" parent="12" name="LAST_LOGIN">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="79" parent="12" name="IP">
+      <Position>8</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="80" parent="12" name="STATUS">
+      <Position>9</Position>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="81" parent="12" name="BZ">
+      <Position>10</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="82" parent="12" name="SKIN">
+      <Position>11</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="83" parent="12" name="EMAIL">
+      <Position>12</Position>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <column id="84" parent="12" name="NUMBER">
+      <Position>13</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="85" parent="12" name="PHONE">
+      <Position>14</Position>
+      <DataType>varchar(32)|0</DataType>
+    </column>
+    <key id="86" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>USER_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="87" parent="13" name="U_ID">
+      <Position>1</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="88" parent="13" name="C1">
+      <Position>2</Position>
+      <DataType>int(10)|0</DataType>
+    </column>
+    <column id="89" parent="13" name="C2">
+      <Position>3</Position>
+      <DataType>int(10)|0</DataType>
+    </column>
+    <column id="90" parent="13" name="C3">
+      <Position>4</Position>
+      <DataType>int(10)|0</DataType>
+    </column>
+    <column id="91" parent="13" name="C4">
+      <Position>5</Position>
+      <DataType>int(10)|0</DataType>
+    </column>
+    <column id="92" parent="13" name="Q1">
+      <Position>6</Position>
+      <DataType>int(10)|0</DataType>
+    </column>
+    <column id="93" parent="13" name="Q2">
+      <Position>7</Position>
+      <DataType>int(10)|0</DataType>
+    </column>
+    <column id="94" parent="13" name="Q3">
+      <Position>8</Position>
+      <DataType>int(10)|0</DataType>
+    </column>
+    <column id="95" parent="13" name="Q4">
+      <Position>9</Position>
+      <DataType>int(10)|0</DataType>
+    </column>
+    <key id="96" parent="13" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>U_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="97" parent="14" name="PICTURES_ID">
+      <Position>1</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="98" parent="14" name="TITLE">
+      <Position>2</Position>
+      <Comment>标题</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="99" parent="14" name="NAME">
+      <Position>3</Position>
+      <Comment>文件名</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="100" parent="14" name="PATH">
+      <Position>4</Position>
+      <Comment>路径</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="101" parent="14" name="CREATETIME">
+      <Position>5</Position>
+      <Comment>创建时间</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="102" parent="14" name="MASTER_ID">
+      <Position>6</Position>
+      <Comment>属于</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="103" parent="14" name="BZ">
+      <Position>7</Position>
+      <Comment>备注</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="104" parent="14" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>PICTURES_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="105" parent="15" name="id">
+      <Position>1</Position>
+      <Comment>用户id,自增长</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="106" parent="15" name="name">
+      <Position>2</Position>
+      <Comment>用户名</Comment>
+      <DataType>char(40)|0</DataType>
+    </column>
+    <column id="107" parent="15" name="password">
+      <Position>3</Position>
+      <Comment>密码</Comment>
+      <DataType>char(50)|0</DataType>
+    </column>
+    <key id="108" parent="15" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="109" parent="16" name="COMMAND_ID">
+      <Position>1</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="110" parent="16" name="KEYWORD">
+      <Position>2</Position>
+      <Comment>关键词</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="111" parent="16" name="COMMANDCODE">
+      <Position>3</Position>
+      <Comment>应用路径</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="112" parent="16" name="CREATETIME">
+      <Position>4</Position>
+      <Comment>创建时间</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="113" parent="16" name="STATUS">
+      <Position>5</Position>
+      <Comment>状态</Comment>
+      <DataType>int(1)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="114" parent="16" name="BZ">
+      <Position>6</Position>
+      <Comment>备注</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="115" parent="16" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>COMMAND_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="116" parent="17" name="IMGMSG_ID">
+      <Position>1</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="117" parent="17" name="KEYWORD">
+      <Position>2</Position>
+      <Comment>关键词</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="118" parent="17" name="CREATETIME">
+      <Position>3</Position>
+      <Comment>创建时间</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="119" parent="17" name="STATUS">
+      <Position>4</Position>
+      <Comment>状态</Comment>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="120" parent="17" name="BZ">
+      <Position>5</Position>
+      <Comment>备注</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="121" parent="17" name="TITLE1">
+      <Position>6</Position>
+      <Comment>标题1</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="122" parent="17" name="DESCRIPTION1">
+      <Position>7</Position>
+      <Comment>描述1</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="123" parent="17" name="IMGURL1">
+      <Position>8</Position>
+      <Comment>图片地址1</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="124" parent="17" name="TOURL1">
+      <Position>9</Position>
+      <Comment>超链接1</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="125" parent="17" name="TITLE2">
+      <Position>10</Position>
+      <Comment>标题2</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="126" parent="17" name="DESCRIPTION2">
+      <Position>11</Position>
+      <Comment>描述2</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="127" parent="17" name="IMGURL2">
+      <Position>12</Position>
+      <Comment>图片地址2</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="128" parent="17" name="TOURL2">
+      <Position>13</Position>
+      <Comment>超链接2</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="129" parent="17" name="TITLE3">
+      <Position>14</Position>
+      <Comment>标题3</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="130" parent="17" name="DESCRIPTION3">
+      <Position>15</Position>
+      <Comment>描述3</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="131" parent="17" name="IMGURL3">
+      <Position>16</Position>
+      <Comment>图片地址3</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="132" parent="17" name="TOURL3">
+      <Position>17</Position>
+      <Comment>超链接3</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="133" parent="17" name="TITLE4">
+      <Position>18</Position>
+      <Comment>标题4</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="134" parent="17" name="DESCRIPTION4">
+      <Position>19</Position>
+      <Comment>描述4</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="135" parent="17" name="IMGURL4">
+      <Position>20</Position>
+      <Comment>图片地址4</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="136" parent="17" name="TOURL4">
+      <Position>21</Position>
+      <Comment>超链接4</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="137" parent="17" name="TITLE5">
+      <Position>22</Position>
+      <Comment>标题5</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="138" parent="17" name="DESCRIPTION5">
+      <Position>23</Position>
+      <Comment>描述5</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="139" parent="17" name="IMGURL5">
+      <Position>24</Position>
+      <Comment>图片地址5</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="140" parent="17" name="TOURL5">
+      <Position>25</Position>
+      <Comment>超链接5</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="141" parent="17" name="TITLE6">
+      <Position>26</Position>
+      <Comment>标题6</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="142" parent="17" name="DESCRIPTION6">
+      <Position>27</Position>
+      <Comment>描述6</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="143" parent="17" name="IMGURL6">
+      <Position>28</Position>
+      <Comment>图片地址6</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="144" parent="17" name="TOURL6">
+      <Position>29</Position>
+      <Comment>超链接6</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="145" parent="17" name="TITLE7">
+      <Position>30</Position>
+      <Comment>标题7</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="146" parent="17" name="DESCRIPTION7">
+      <Position>31</Position>
+      <Comment>描述7</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="147" parent="17" name="IMGURL7">
+      <Position>32</Position>
+      <Comment>图片地址7</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="148" parent="17" name="TOURL7">
+      <Position>33</Position>
+      <Comment>超链接7</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="149" parent="17" name="TITLE8">
+      <Position>34</Position>
+      <Comment>标题8</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="150" parent="17" name="DESCRIPTION8">
+      <Position>35</Position>
+      <Comment>描述8</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="151" parent="17" name="IMGURL8">
+      <Position>36</Position>
+      <Comment>图片地址8</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="152" parent="17" name="TOURL8">
+      <Position>37</Position>
+      <Comment>超链接8</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="153" parent="17" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>IMGMSG_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="154" parent="18" name="TEXTMSG_ID">
+      <Position>1</Position>
+      <DataType>varchar(100)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="155" parent="18" name="KEYWORD">
+      <Position>2</Position>
+      <Comment>关键词</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="156" parent="18" name="CONTENT">
+      <Position>3</Position>
+      <Comment>内容</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="157" parent="18" name="CREATETIME">
+      <Position>4</Position>
+      <Comment>创建时间</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="158" parent="18" name="STATUS">
+      <Position>5</Position>
+      <Comment>状态</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="159" parent="18" name="BZ">
+      <Position>6</Position>
+      <Comment>备注</Comment>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="160" parent="18" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>TEXTMSG_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

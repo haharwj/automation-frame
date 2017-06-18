@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.com.frame.mapper.SfBCommonChildMapper" >
+  <resultMap id="BaseResultMap" type="cn.com.frame.model.SfBCommonChild" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="uuid" property="uuid" jdbcType="VARCHAR" />
+    <result column="parentuuid" property="parentuuid" jdbcType="VARCHAR" />
+    <result column="a01" property="a01" jdbcType="VARCHAR" />
+    <result column="a02" property="a02" jdbcType="VARCHAR" />
+    <result column="a03" property="a03" jdbcType="VARCHAR" />
+    <result column="a04" property="a04" jdbcType="VARCHAR" />
+    <result column="a05" property="a05" jdbcType="VARCHAR" />
+    <result column="a06" property="a06" jdbcType="VARCHAR" />
+    <result column="a07" property="a07" jdbcType="VARCHAR" />
+    <result column="a08" property="a08" jdbcType="VARCHAR" />
+    <result column="a09" property="a09" jdbcType="VARCHAR" />
+    <result column="a10" property="a10" jdbcType="VARCHAR" />
+    <result column="a11" property="a11" jdbcType="VARCHAR" />
+    <result column="a12" property="a12" jdbcType="VARCHAR" />
+    <result column="a13" property="a13" jdbcType="VARCHAR" />
+    <result column="a14" property="a14" jdbcType="VARCHAR" />
+    <result column="a15" property="a15" jdbcType="VARCHAR" />
+    <result column="a16" property="a16" jdbcType="VARCHAR" />
+    <result column="a17" property="a17" jdbcType="VARCHAR" />
+    <result column="a18" property="a18" jdbcType="VARCHAR" />
+    <result column="a19" property="a19" jdbcType="VARCHAR" />
+    <result column="a20" property="a20" jdbcType="VARCHAR" />
+    <result column="d01" property="d01" jdbcType="DOUBLE" />
+    <result column="d02" property="d02" jdbcType="DOUBLE" />
+    <result column="d03" property="d03" jdbcType="DOUBLE" />
+    <result column="d04" property="d04" jdbcType="DOUBLE" />
+    <result column="d05" property="d05" jdbcType="DOUBLE" />
+    <result column="d06" property="d06" jdbcType="DOUBLE" />
+    <result column="d07" property="d07" jdbcType="DOUBLE" />
+    <result column="d08" property="d08" jdbcType="DOUBLE" />
+    <result column="d09" property="d09" jdbcType="DOUBLE" />
+    <result column="d10" property="d10" jdbcType="DOUBLE" />
+    <result column="MEMO" property="memo" jdbcType="VARCHAR" />
+    <result column="OWNER" property="owner" jdbcType="VARCHAR" />
+    <result column="UPDATER" property="updater" jdbcType="VARCHAR" />
+    <result column="UPDATETIME" property="updatetime" jdbcType="VARCHAR" />
+    <result column="EFFECTIVE" property="effective" jdbcType="INTEGER" />
+    <result column="CREATEDAY" property="createday" jdbcType="TIMESTAMP" />
+    <result column="UPDATEDAY" property="updateday" jdbcType="TIMESTAMP" />
+    <result column="UPDATECOUNT" property="updatecount" jdbcType="DOUBLE" />
+    <result column="b01" property="b01" jdbcType="LONGVARCHAR" />
+    <result column="b02" property="b02" jdbcType="LONGVARCHAR" />
+    <result column="b03" property="b03" jdbcType="LONGVARCHAR" />
+    <result column="b04" property="b04" jdbcType="LONGVARCHAR" />
+    <result column="b05" property="b05" jdbcType="LONGVARCHAR" />
+  </resultMap>
+</mapper>

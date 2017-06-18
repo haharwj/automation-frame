@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework.restdocs:spring-restdocs-restassured:1.1.0.RC1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.restdocs/spring-restdocs-restassured/1.1.0.RC1/3664c84af29251be6d660b5d486a53f47fb629ac/spring-restdocs-restassured-1.1.0.RC1.jar!/" />
+      <root url="jar://F:/workspace/gradle/caches/modules-2/files-2.1/org.springframework.restdocs/spring-restdocs-restassured/1.1.0.RC1/3664c84af29251be6d660b5d486a53f47fb629ac/spring-restdocs-restassured-1.1.0.RC1.jar!/" />
+      <root url="jar://G:/gradle/repository/caches/modules-2/files-2.1/org.springframework.restdocs/spring-restdocs-restassured/1.1.0.RC1/3664c84af29251be6d660b5d486a53f47fb629ac/spring-restdocs-restassured-1.1.0.RC1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.restdocs/spring-restdocs-restassured/1.1.0.RC1/f260d1109cb3f5097362aa8549305201a4202da8/spring-restdocs-restassured-1.1.0.RC1-sources.jar!/" />
+      <root url="jar://F:/workspace/gradle/caches/modules-2/files-2.1/org.springframework.restdocs/spring-restdocs-restassured/1.1.0.RC1/f260d1109cb3f5097362aa8549305201a4202da8/spring-restdocs-restassured-1.1.0.RC1-sources.jar!/" />
+      <root url="jar://G:/gradle/repository/caches/modules-2/files-2.1/org.springframework.restdocs/spring-restdocs-restassured/1.1.0.RC1/f260d1109cb3f5097362aa8549305201a4202da8/spring-restdocs-restassured-1.1.0.RC1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

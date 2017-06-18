@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.com.frame.mapper.SfSUserRoleMapper" >
+  <resultMap id="BaseResultMap" type="cn.com.frame.model.SfSUserRole" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="USERUUID" property="useruuid" jdbcType="VARCHAR" />
+    <result column="ROLEUUID" property="roleuuid" jdbcType="VARCHAR" />
+    <result column="USERNAME" property="username" jdbcType="VARCHAR" />
+    <result column="ROLEID" property="roleid" jdbcType="VARCHAR" />
+    <result column="a01" property="a01" jdbcType="VARCHAR" />
+    <result column="a02" property="a02" jdbcType="VARCHAR" />
+    <result column="a03" property="a03" jdbcType="VARCHAR" />
+    <result column="a04" property="a04" jdbcType="VARCHAR" />
+    <result column="a05" property="a05" jdbcType="VARCHAR" />
+    <result column="a06" property="a06" jdbcType="VARCHAR" />
+    <result column="a07" property="a07" jdbcType="VARCHAR" />
+    <result column="a08" property="a08" jdbcType="VARCHAR" />
+    <result column="a09" property="a09" jdbcType="VARCHAR" />
+    <result column="a10" property="a10" jdbcType="VARCHAR" />
+    <result column="OWNER" property="owner" jdbcType="VARCHAR" />
+    <result column="UPDATER" property="updater" jdbcType="VARCHAR" />
+    <result column="UPDATETIME" property="updatetime" jdbcType="VARCHAR" />
+    <result column="EFFECTIVE" property="effective" jdbcType="INTEGER" />
+    <result column="CREATEDAY" property="createday" jdbcType="TIMESTAMP" />
+    <result column="UPDATEDAY" property="updateday" jdbcType="TIMESTAMP" />
+    <result column="UPDATECOUNT" property="updatecount" jdbcType="DOUBLE" />
+  </resultMap>
+
+
+</mapper>
