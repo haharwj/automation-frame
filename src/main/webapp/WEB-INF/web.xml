@@ -9,6 +9,28 @@
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 
+
+    <!-- ********************************h2数据库引擎启动********************************************************** -->
+    <!--<listener>-->
+        <!--<listener-class>org.h2.server.web.DbStarter</listener-class>-->
+    <!--</listener>-->
+    <!--<context-param>-->
+        <!--<param-name>db.url</param-name>-->
+        <!--<param-value>jdbc:h2:~/h2db/automation-frame/frame</param-value>-->
+    <!--</context-param>-->
+    <!--<context-param>-->
+        <!--<param-name>db.user</param-name>-->
+        <!--<param-value>automation-frame</param-value>-->
+    <!--</context-param>-->
+    <!--<context-param>-->
+        <!--<param-name>db.password</param-name>-->
+        <!--<param-value>123456</param-value>-->
+    <!--</context-param>-->
+   <!--<context-param>-->
+        <!--<param-name>db.tcpServer</param-name>-->
+        <!--<param-value>-tcpAllowOthers</param-value>-->
+    <!--</context-param>-->
+
     <!-- ********************************log4j配置********************************************************** -->
     <context-param>
         <param-name>log4jConfigLocation</param-name>

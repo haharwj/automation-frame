@@ -9,7 +9,6 @@
         <webroots>
           <root url="file://$MODULE_DIR$/../../src/main/webapp" relative="/" />
         </webroots>
-        <sourceRoots />
       </configuration>
     </facet>
   </component>
@@ -53,6 +52,7 @@
     <orderEntry type="library" name="Gradle: io.springfox:springfox-swagger-ui:2.4.0" level="project" />
     <orderEntry type="library" name="Gradle: io.springfox:springfox-staticdocs:2.4.0" level="project" />
     <orderEntry type="library" name="Gradle: io.github.robwin:assertj-swagger:0.1.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.h2database:h2:1.4.196" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.servlet:javax.servlet-api:3.1.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Gradle: javax.websocket:javax.websocket-api:1.0" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework:spring-beans:4.2.5.RELEASE" level="project" />

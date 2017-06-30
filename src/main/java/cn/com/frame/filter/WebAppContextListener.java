@@ -23,6 +23,8 @@ public class WebAppContextListener implements ServletContextListener {
         systemReflect.reflect(tableArr);
         //System.out.println("========获取Spring WebApplicationContext");
         new PropertiesReader().init();
+        //启动h2数据库
+//        System.out.println("========启动h2");
     }
 
 }

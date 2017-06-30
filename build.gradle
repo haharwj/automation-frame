@@ -58,7 +58,6 @@ ext {
     if (!project.hasProperty("env")) {
         println '没有配置数据环境，默认使用 开发环境'
         env = "dev"
-
     }
     println "使用数据库环境为:${project['env']}"
 
@@ -144,6 +143,18 @@ flyway {
     password = prop.getProperty('jdbc.pass')
     locations = ["filesystem:db/migration"]
 
+//    针对每种数据库的flyway.url示例配置为：
+//    # PostgreSQL
+//    flyway.url = jdbc:postgresql://localhost:5432/postgres?currentSchema=myschema
+//
+//    # MySQL
+//    flyway.url = jdbc:mysql://localhost:3306/testdb?serverTimezone=UTC&useSSL=true
+//
+//    # H2
+//    flyway.url = jdbc:h2:./.tmp/testdb
+//
+//    # Hsql
+//    flyway.url = jdbc:hsqldb:hsql//localhost:1476/testdb
 }
 
 repositories {
@@ -204,6 +215,7 @@ dependencies {
 
     //h2数据库引擎
     testCompile group: 'com.h2database', name: 'h2', version: '1.4.196'
+    compile group: 'com.h2database', name: 'h2', version: '1.4.196'
 
 
     mybatisGenerator 'org.mybatis.generator:mybatis-generator-core:1.3.2'

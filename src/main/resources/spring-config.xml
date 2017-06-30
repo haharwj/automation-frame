@@ -16,10 +16,10 @@
 	<!--<context:annotation-config/>-->
 
 	<!-- 读取配置文件 -->
+	<!--<context:property-placeholder-->
+		<!--location="classpath:jdbc-h2database.properties,classpath:jdbc-mysql.properties,classpath:tomcat-pool-config.properties,classpath:mail-config.properties" />-->
 	<context:property-placeholder
-		location="classpath:jdbc-mysql.properties,classpath:tomcat-pool-config.properties,classpath:mail-config.properties" />
-
-
+		location="classpath:jdbc-h2database.properties,classpath:tomcat-pool-config.properties,classpath:mail-config.properties" />
 
 	<!-- 扫描注解，除去web层注解，web层注解在mvc配置中扫描 -->
 	<context:component-scan
