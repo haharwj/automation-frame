@@ -13,7 +13,7 @@ public class HomeController {
     //首页跳转到api页面
     @RequestMapping("index")
     public ModelAndView home(){
-        return new ModelAndView("login.jsp");
+        return new ModelAndView("index");
     }
 
 

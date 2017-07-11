@@ -1,6 +1,7 @@
 package cn.com.frame.common.tools.file;
 
 import cn.com.frame.common.util.ParamUtil;
+import cn.com.frame.common.util.ShareData;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -32,6 +33,24 @@ public class PropertiesReader {
             split = pagestring.split(",");
             ParamUtil.commonType = split;
 
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (input != null) {
+                try {
+                    input.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+        try {
+            input = this.getClass().getResourceAsStream("/application.properties");
+            Properties properties = new Properties();
+            properties.load(input);
+            boolean debug = properties.getProperty("application.debug").equals("true");
+            ShareData.applicationMap.put("debug", debug);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

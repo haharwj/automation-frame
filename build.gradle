@@ -71,10 +71,12 @@ ext {
 def getDbProperties = {
     def properties = new Properties()
     def dbPropertiesPath = sourceSets.main.resources.srcDirs[1].path;
-    file("$dbPropertiesPath/jdbc-mysql.properties").withInputStream { inputStream ->
+//    file("$dbPropertiesPath/jdbc-mysql.properties").withInputStream { inputStream ->
+//        properties.load(inputStream)
+//    }
+    file("$dbPropertiesPath/jdbc-h2database.properties").withInputStream { inputStream ->
         properties.load(inputStream)
     }
-
     properties;
 
 }
@@ -223,10 +225,6 @@ dependencies {
     mybatisGenerator 'tk.mybatis:mapper:3.3.8'
 
 }
-
-
-
-
 
 task mybatisGenerate << {
     def prop = getDbProperties()
