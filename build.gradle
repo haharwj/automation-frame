@@ -1,7 +1,5 @@
 version '2.0'
 
-
-
 apply plugin: 'war'
 apply plugin: 'idea'
 apply plugin: 'eclipse-wtp'
@@ -82,10 +80,6 @@ def getDbProperties = {
 }
 
 
-
-
-
-
 sourceSets {
     main {
         resources {
@@ -140,9 +134,9 @@ asciidoctor {
 
 flyway {
     def prop = getDbProperties()
-    user = prop.getProperty('jdbc.user')
-    url = prop.getProperty('jdbc.url')
-    password = prop.getProperty('jdbc.pass')
+    user = prop.getProperty('jdbc.h2.user')
+    url = prop.getProperty('jdbc.h2.url')
+    password = prop.getProperty('jdbc.h2.pass')
     locations = ["filesystem:db/migration"]
 
 //    针对每种数据库的flyway.url示例配置为：
